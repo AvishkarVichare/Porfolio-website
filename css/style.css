@@ -214,6 +214,7 @@ nav{
     height: 250px;
     width: 400px;
     object-fit: cover;
+    object-position: top;
 }
 
 .btn-group{

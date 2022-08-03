@@ -15,8 +15,8 @@
 
         </div>
         <ul class="nav-list">
-            <li><a target="_target" class="nav-link nav-active" href="#">About Me</a></li>
-            <li><a target="_target" class="nav-link" href="#">My Skills</a></li>
+            <li><a target="_target" class="nav-link nav-active" href="#about">About Me</a></li>
+            <li><a target="_target" class="nav-link" href="#skills">My Skills</a></li>
             <li><a target="_target" class="nav-link" href="#projects">Projects</a></li>
             <li><a target="_target" class="nav-link" href="#">Contacts</a></li>
         </ul>
@@ -34,41 +34,110 @@
             
            </div>
            <a target="_target"  href="#contact"><span>--</span> Contact Me Here</a>
-           <a target="_target"  href="#contact"><span>--</span> About me</a>
+           <a target="_target"  href="#about"><span>--</span> About me</a>
         </div>
     </div>
 
     <!-- about  -->
 
-    <!-- <div class="about-me">
+    <div id="about" class="about-me">
         <h1>About Me</h1>
 
         <div class="about-content">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero quod, soluta ullam quas dolorum reprehenderit! Laudantium nesciunt officia nihil et.
+        <div >
+            <span class="purple">IT engineering student</span> from PHCET Interested in <span class="blue">Software Development</span> with good knowledge of <span class="red">Full Stack Development</span> Seeking an opportunity to can utilize my skills and enhance my learning. Capable of mastering new technologies. 
         </div>
-
-    </div> -->
+        <img src="assets/devs.svg" alt="">
+    </div>
+    </div>
 
 <!-- skills -->
 
-<!-- 
-    <div class="skills">
+
+    <div id="skills" class="skills">
         <h1>My Skills</h1>
-        <div class="skill-cards">
+        <div  class="html skill-cards">
             <div class="skill-card">
-                <img src="" alt="">
+                <img src="assets/html.png" alt="">
+                
                 <h4>HTML</h4>
+                <div class="points"><span class="point-8"></span></div>
+            </div>
+            <div class="skill-card">
+                <img src="assets/css.png" alt="">
+                
+                <h4>CSS</h4>
+                <div class="points"><span class="point-8"></span></div>
+            </div>
+            <div class="skill-card">
+                <img src="assets/js.png" alt="">
+                
+                <h4>Javascript</h4>
+                <div class="points"><span class="point-9"></span></div>
             </div>
         </div>
-    </div> -->
+
+        <div class="skill-cards">
+            <div class="skill-card">
+                <img src="assets/node.png" alt="">
+                
+                <h4>Node.js</h4>
+                <div class="points"><span class="point-9"></span></div>
+            </div>
+            <div class="skill-card">
+                <img src="assets/express.png" alt="">
+                
+                <h4>Express</h4>
+                <div class="points"><span class="point-9"></span></div>
+            </div>
+        </div>
+
+        <div class="skill-cards">
+            <div class="skill-card">
+                <img src="assets/react.png" alt="">
+                
+                <h4>React</h4>
+                <div class="points"><span class="point-9"></span></div>
+            </div>
+        </div>
+
+        <div class="skill-cards">
+            <div class="skill-card">
+                <img src="assets/java.png" alt="">
+                
+                <h4>Java</h4>
+                <div class="points"><span class="point-8"></span></div>
+            </div>
+        </div>
+        <div class="skill-cards">
+            <div class="skill-card">
+                <img src="assets/mongo.svg" alt="">
+                
+                <h4>MongoDB</h4>
+                <div class="points"><span class="point-8"></span></div>
+            </div>
+        </div>
+
+
+     
+
+    </div>
 
 
 <!-- projects -->
 
     <div id="projects" class="projects">
         <h1>My projects</h1>
-        <h4>HTML CSS Projects</h4>
-        <div class="pro-cards">
+
+        <div class="tab-group">
+            <h4 data-tab="html" class="tab tab-active">HTML CSS</h4>
+            <h4 data-tab="react" class="tab ">React</h4>
+            <h4 data-tab="mern" class="tab">MERN</h4>
+        </div>
+       
+
+        <!-- html  -->
+        <div id="html" class="pro-cards pro-active">
             <div class="pro-card">
                 <img src="project-imgs/1.png" alt="">
                 <div class="btn-group">
@@ -175,12 +244,58 @@
                 </div>
             </div>
         </div>
+
+           <!-- react js project  -->
+           <div id="react" class="pro-cards">
+
+            <div class="pro-card">
+                <img src="project-imgs/befit.png" alt="">
+                <div class="btn-group">
+                    <a target="_target" href="https://befitapp.netlify.app/">Live Link</a>
+                    <a target="_target" href="https://github.com/AvishkarVichare/befit_reactApp_with_API">Source Code</a>
+                </div>
+            </div>
+            <div class="pro-card">
+                <img src="project-imgs/news.png" alt="">
+                <div class="btn-group">
+                   
+                    <a target="_target" href="https://github.com/AvishkarVichare/News-app-with-react">Source Code</a>
+                </div>
+            </div>
+            <div class="pro-card">
+                <img src="project-imgs/befit.png" alt="">
+                <div class="btn-group">
+                    <a target="_target" href="https://befitapp.netlify.app/">Live Link</a>
+                    <a target="_target" href="https://github.com/AvishkarVichare/befit_reactApp_with_API">Source Code</a>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- MERN project  -->
+
+        <div id="mern" class="pro-cards">
+
+            <div class="pro-card">
+                <img src="project-imgs/notes.png" alt="">
+                <div class="btn-group">
+                    <a target="_target" href="https://notesitapp.netlify.app/">Live Link</a>
+                    <a target="_target" href="https://github.com/AvishkarVichare/NoteIT-Frontend">Frontend Code</a>
+                    <a target="_target" href="https://github.com/AvishkarVichare/noteit-backend">Backend Code</a>
+                </div>
+            </div>
+
+        </div>
+
     </div>
 
 
-    <div class="construction">
-        <h1>Other Section are still Under Construction</h1>
-    </div>
+    <footer id="contact">
+        <div>
+           <img src="" alt="linkdine"> <a href=""></a>
+        </div>
+    </footer>
 
 
 </body>

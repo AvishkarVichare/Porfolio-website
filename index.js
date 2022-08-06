@@ -50,3 +50,17 @@ tabs.forEach(e=>{
 
 
 })
+
+
+
+
+// burger 
+
+let burger = document.querySelector('.burger')
+let nav = document.getElementsByTagName('nav')
+let navList = document.querySelector('.nav-list')
+burger.addEventListener('click',()=>{
+
+    navList.classList.toggle('burger-active')
+
+})
